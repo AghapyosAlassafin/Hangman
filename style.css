@@ -1,0 +1,236 @@
+:root {
+    --white-color: #EEEEEE;
+    --blue-color: #00ADB5;
+    --gray-color: #53565c;
+    --dark-color: #222831;
+    --red-color: #F7374F;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+    padding: 10px;
+    text-align: center;
+}
+
+.header img {
+    width: 50px;
+    display: inline-block;
+}
+
+.container {
+    display: flex;
+    flex: 2;
+}
+
+.inputs {
+    flex: 1;
+    background-color: var(--white-color);
+    padding: 20px;
+    border-right: 5px solid var(--dark-color);
+}
+
+.photo {
+    border-left: 5px solid var(--dark-color);
+    flex: 1;
+    background-color: var(--white-color);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-1 {
+    width: 400px;
+    height: 500px;
+    border: 4px solid var(--blue-color);
+    border-radius: 5px;
+    position: relative;
+}
+
+.photo-1 * {
+    position: absolute;
+}
+
+.photo-1 .person * {
+    display: none;
+}
+
+.photo-1 .first-line {
+    width: 130px;
+    height: 5px;
+    background-color: var(--dark-color);
+    bottom: 20px;
+    left: 10px;
+}
+
+.photo-1 .border {
+    width: 155px;
+    height: 300px;
+    border-left: 5px solid var(--dark-color);
+    border-top: 5px solid var(--dark-color);
+    top: 170px;
+    left: 65px;
+}
+
+.photo-1 .second-line {
+    width: 5px;
+    height: 40px;
+    background-color: var(--dark-color);
+    left: 219.5px;
+    top: 175px;
+}
+
+.photo-1 .person .head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid var(--dark-color);
+    top: 210px;
+    left: 192px;
+}
+
+.photo-1 .person .body {
+    width: 5px;
+    height: 100px;
+    background-color: var(--dark-color);
+    top: 269px;
+    left: 218px
+}
+
+.photo-1 .person .left-hand {
+    width: 5px;
+    height: 50px;
+    background-color: var(--dark-color);
+    transform: rotate(45deg);
+    top: 276px;
+    left: 200px;
+}
+
+.photo-1 .person .right-hand {
+    width: 5px;
+    height: 50px;
+    background-color: var(--dark-color);
+    transform: rotate(-45deg);
+    top: 276px;
+    left: 237px;
+}
+
+.photo-1 .person .left-leg {
+    width: 5px;
+    height: 50px;
+    background-color: var(--dark-color);
+    transform: rotate(45deg);
+    top: 361px;
+    left: 201px;
+}
+
+.photo-1 .person .right-leg {
+    width: 5px;
+    height: 50px;
+    background-color: var(--dark-color);
+    transform: rotate(-45deg);
+    top: 363px;
+    left: 237px;
+}
+
+.inputs .the-word{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    min-width: 20px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.inputs .the-word p {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs .input {
+    margin: auto;
+    width: 300px;
+    height: 75px;
+    border-radius: 20px;
+    border: 5px solid var(--blue-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputs .input input {
+    border: none;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    border: 2px dashed var(--gray-color);
+}
+
+.inputs .input input:focus {
+    outline: none;
+}
+
+.inputs .input button {
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--blue-color);
+    border: none;
+    color: var(--white-color);
+    font-weight: bold;
+
+}
+
+.wrong-letter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    background-color: var(--red-color);
+    min-width: 20px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.wrong-letter p {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--red-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
