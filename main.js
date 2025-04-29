@@ -42,6 +42,7 @@ submit.onclick = function(){
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'OK'
         });
+        input.value = "";
     }
     else {
     if(!isValidLetter(value)){
