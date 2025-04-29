@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white-color);
 }
 
 .header {
@@ -172,7 +173,6 @@ body {
 
 .inputs .input {
     margin: auto;
-    width: 300px;
     height: 75px;
     border-radius: 20px;
     border: 5px solid var(--blue-color);
@@ -233,4 +233,115 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1000px) {
+    .header {
+        padding: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header h1 {
+        margin: 0;
+        margin-right: 15px;
+        font-size: 25px;
+    }
+    .header img {
+        width: 30px;
+    }
+    .container {
+        display: block;
+    }
+    .inputs {
+        border-right: none;
+        border-bottom: 3px dashed var(--dark-color);
+        padding-bottom: 15px;
+    }
+    .inputs .the-word {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .inputs h2 {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    .wrong-letter {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .photo {
+        border-left: none;
+    }
+    .photo-1 {
+        height: 300px;
+        width: 250px;
+    }
+    .photo-1 .first-line {
+        width: 70px;
+        height: 5px;
+        background-color: var(--dark-color);
+        bottom: 20px;
+        left: 10px;
+    }
+    
+    .photo-1 .border {
+        width: 100px;
+        height: 200px;
+        top: 70px;
+        left: 43px;
+    }
+    
+    .photo-1 .second-line {
+        height: 28px;
+        left: 143px;
+        top: 73px;
+    }
+    
+    .photo-1 .person .head {
+        width: 33px;
+        height: 33px;
+        top: 96px;
+        left: 124px;
+    }
+    
+    .photo-1 .person .body {
+        height: 60px;
+        top: 138px;
+        left: 143px;
+    }
+    
+    .photo-1 .person .left-hand {
+        height: 28px;
+        top: 140px;
+        left: 133px;
+    }
+    
+    .photo-1 .person .right-hand {
+        height: 28px;
+        top: 140px;
+        left: 154px;
+    }
+    
+    .photo-1 .person .left-leg {
+        height: 28px;
+        top: 192px;
+        left: 134px;
+    }
+    
+    .photo-1 .person .right-leg {
+        height: 28px;
+        top: 193px;
+        left: 153px;
+    }
+    .inputs .the-word p {
+        font-size: 16px;
+    }
+    .wrong-letter {
+        margin: 0px;
+        margin-top: 20px;
+    }
+    .wrong-letter p {
+        font-size: 16px;
+    }
 }
