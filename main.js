@@ -120,7 +120,7 @@ function checkIfWin(){
         Swal.fire({
             title: 'Congratulations',
             text: 'You Win',
-            icon: 'info',
+            icon: 'success',
             showCancelButton: false,
             confirmButtonColor: '#3085d6',
             confirmButtonText: 'Play Again'
